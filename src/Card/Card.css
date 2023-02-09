@@ -5,6 +5,11 @@
   background-color: var(--bg);
 }
 
+@keyframes pop {
+  from {background-color:var(--card-bg); left: 0px; top: 0px;}
+  to {background-color:var(--card-bg); left: 100px; top: 100px;}
+}
+
 .card {
   background-color: var(--card-bg);
   display: flex;
@@ -19,7 +24,13 @@
   margin: 10px;
 }
 
+.card:hover {
+  box-shadow: 0 5px 20px 5px rgb(0 255 0 / 0.2);
+}
+
+
 .card-image {
+  padding: 10px;
   width: 60px;
   height: 60px;
 }
