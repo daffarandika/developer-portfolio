@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import CardList from './CardList/CardList'
+import HeaderCard from './HeaderCard/HeaderCard'
 
 const cardItems = [
   {
@@ -21,5 +22,8 @@ const cardItems = [
   },
 ]
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <CardList cardItems={cardItems} />
+  <>
+    <HeaderCard />
+    <CardList cardItems={cardItems} />
+  </>
 )
