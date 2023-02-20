@@ -22,8 +22,6 @@ const cardItems = [
   },
 ]
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
     <HeaderCard />
-    <CardList cardItems={cardItems} />
-  </>
+    // {/* <CardList cardItems={cardItems} /> */}
 )
